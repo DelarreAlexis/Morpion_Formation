@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MorpionFormation2.MainPage">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <Label Text="Vous (X)" Grid.Column="0" Grid.Row="0"/>
+        
+        <Grid Grid.Row="0" Grid.Column="1">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            <Label x:Name="lblEtatPartie" Grid.Row="0"/>
+            <Button Text="Reset game" Grid.Row="1" BackgroundColor="Blue" Clicked="Button_Clicked"/>
+        </Grid>
+        
+        <Label Text="Adversaire (O)" Grid.Column="2" Grid.Row="0" HorizontalTextAlignment="End"/>
+        <Button x:Name="btn1" Grid.Row="1" Grid.Column="0" BackgroundColor="Blue" Clicked="btn1_Clicked"/>
+        <Button x:Name="btn2" Grid.Row="2" Grid.Column="0" BackgroundColor="Blue" Clicked="btn1_Clicked"/>
+        <Button x:Name="btn3" Grid.Row="3" Grid.Column="0" BackgroundColor="Blue" Clicked="btn1_Clicked"/>
+        <Button x:Name="btn4" Grid.Row="1" Grid.Column="1" BackgroundColor="Blue" Clicked="btn1_Clicked"/>
+        <Button x:Name="btn5" Grid.Row="2" Grid.Column="1" BackgroundColor="Blue" Clicked="btn1_Clicked"/>
+        <Button x:Name="btn6" Grid.Row="3" Grid.Column="1" BackgroundColor="Blue" Clicked="btn1_Clicked"/>
+        <Button x:Name="btn7" Grid.Row="1" Grid.Column="2" BackgroundColor="Blue" Clicked="btn1_Clicked"/>
+        <Button x:Name="btn8" Grid.Row="2" Grid.Column="2" BackgroundColor="Blue" Clicked="btn1_Clicked"/>
+        <Button x:Name="btn9" Grid.Row="3" Grid.Column="2" BackgroundColor="Blue" Clicked="btn1_Clicked"/>
+    </Grid>
+
+</ContentPage>
